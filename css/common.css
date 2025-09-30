@@ -1,0 +1,32 @@
+body{
+    background-color: #121212;
+}
+
+.wrap{
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+h2{
+    font-family: "Ubuntu", sans-serif;
+}
+
+h3{
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: -2px;
+}
+
+section:not(.sec_1, .sec_2){
+    padding: 150px 150px;
+}
+
+@media screen and (max-width: 768px) {
+    section:not(.sec_1, .sec_2){
+        padding: 100px 20px;
+    }
+
+    h3{
+        font-size: 25px;
+    }
+}
