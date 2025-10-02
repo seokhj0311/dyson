@@ -4,9 +4,8 @@ $(document).ready(function(){
         $(".sub_menu").addClass("active");
     });
 
-    $(".sub_menu").click(function(){
+    $(".close").click(function(){
         $(".sub_menu").removeClass("active");
     });
-
-
+    
 });

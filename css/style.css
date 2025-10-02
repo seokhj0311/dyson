@@ -1,6 +1,19 @@
 @import url(reset.css);
 @import url(common.css);
 
+/* 예시)
+header{
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    => 크롬 브라우저
+    -moz-transform: scale(1);
+    => 파이어폭스 브라우저
+    -ms-transform: scale(1);
+    => 익스플로러 브라우저
+    -o-transform: scale(1);
+    => 오페라 브라우저
+} */
+
 .wrap{
     max-width: 1920px;
     /* 최대 허용 가능 범위 */
@@ -71,7 +84,8 @@ header{
 .sub_menu{
     width: 100%;
     height: 100vh;
-    background-color: #fff;
+    background: rgb(0 0 0 / 50%);
+    backdrop-filter: blur(15px);
     position: fixed;
     top: 0;
     right: -100%;
@@ -80,13 +94,19 @@ header{
 }
 
 .sub_menu a{
-    color: #1D1D1D;
+    color: #fff;
     font-size: 26px;
     font-weight: 700;
 }
 
+/* id & 자식 & 자손 선택자 우선 순위가 높음
+그 다음이 구조 선택자
+그 다음에 클래스
+마지막으로 div 같은 태그 선택자 순으로 */
+
 .sub_menu li{
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+    letter-spacing: -1px;
 }
 
 .sub_menu_1{
@@ -98,6 +118,7 @@ header{
     position: absolute;
     top: 30px;
     right: 25px;
+    color: #fff;
 }
 
 .active{
